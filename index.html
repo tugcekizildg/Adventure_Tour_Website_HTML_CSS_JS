@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Website</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/">Adven<span>ture</span></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#" class="btn">Contact</a></li>
+      </ul>
+      <img src="./img/menu-btn.png" alt="hamburger menu" class="menu-btn" />
+    </nav>
+    <header>
+      <div class="header-content">
+        <h2>Explore The Beautiful World</h2>
+        <div class="line"></div>
+        <h1>A Wonderful Guide</h1>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </header>
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+      <div class="title">
+        <h2>Upcoming Events</h2>
+        <div class="line"></div>
+      </div>
+      <div class="events-content">
+        <div class="event">
+          <img src="./img/mountain.png" alt="A man climbing a mountain" />
+          <h3>Everest Camp Trekking</h3>
+          <p>
+            Starting from the vibrant town of Lukla, the journey winds through
+            picturesque villages like Namche Bazaar and Tengboche, where
+            colorful prayer flags dance in the mountain breeze.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="event">
+          <img src="./img/walk.png" alt="A girl walking on the mountain" />
+          <h3>Walking Holidays</h3>
+          <p>
+            As you ascend, the world below fades away, replaced by panoramic
+            views of rolling hills and open skies. With every breath, you feel
+            more connected to the land, and more grounded within yourself.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore" id="explore">
+      <div class="explore-content">
+        <h2>Explore The World</h2>
+        <div class="line"></div>
+        <p>
+          To explore the world is to open your heart to endless discovery. Every
+          destination holds a unique story from ancient cities brimming with
+          history to untouched landscapes that stir the soul. It’s not just
+          about seeing new places, but experiencing new cultures, flavors, and
+          perspectives that expand your view of life.
+        </p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tours" id="tours">
+      <div class="tours-content">
+        <div class="tours-info">
+          <h2>Upcoming Tours & Excursions</h2>
+          <div class="line"></div>
+          <p>
+            Discover exciting adventures just around the corner! From guided
+            mountain treks to cultural festivals and outdoor expeditions, our
+            upcoming tours and events are designed to inspire and connect you
+            with unforgettable experiences. Stay tuned and get ready to explore
+            more!
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="tours-gallery">
+          <div class="gallery-img">
+            <img
+              src="./img/lake.png"
+              alt="A man is on the lake weather is cold" />
+          </div>
+          <div class="gallery-img">
+            <img
+              src="./img/grass.png"
+              alt="Girls are lying on the grass and one of them is taking photo." />
+          </div>
+          <div class="gallery-img">
+            <img
+              src="./img/landscape.png"
+              alt="A child sitting on the yellowish grass and looking at the landscape" />
+          </div>
+          <div class="gallery-img">
+            <img src="./img/rock.png" alt="A man climbing on a rock" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-content">
+        <div class="logo">
+          <a href="/" class="footer-logo">Adven<span>ture</span></a>
+          <p>Explore the world.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Tours</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <p class="copyright">Copyright &copy; 2025 Adventure</p>
+    </footer>
+
+    <!-- Script for hamburger menu -->
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
